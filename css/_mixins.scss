@@ -14,7 +14,7 @@
     clear: both;
   }
 }
-
+//button mixins
 @mixin closehover($buttoncolor ,$color) {
   button.#{$buttoncolor} {
     background-color: $color;
@@ -28,3 +28,21 @@
     }
   }
 }
+// color palette
+@mixin primary($color1, $color2, $color3, $color4) {
+  @each $color in $color1, $color2, $color3, $color4 {
+      .#{$color} {
+        height: 200px;
+        width: 100px;
+        border: none;
+        background-color: $color;
+        &:before {
+          text-transform: uppercase;
+          font-family: sans-serif;
+          content: "" + $color;
+        }
+      }
+
+  }
+}
+// content: "Mixed with 65% $color";

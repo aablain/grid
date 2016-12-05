@@ -29,6 +29,46 @@ img {
   min-height: 1px;
   border: 1px solid black; }
 
+.whitesmoke {
+  height: 200px;
+  width: 100px;
+  border: none;
+  background-color: whitesmoke; }
+  .whitesmoke:before {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    content: "whitesmoke"; }
+
+.teal {
+  height: 200px;
+  width: 100px;
+  border: none;
+  background-color: teal; }
+  .teal:before {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    content: "teal"; }
+
+.gold {
+  height: 200px;
+  width: 100px;
+  border: none;
+  background-color: gold; }
+  .gold:before {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    content: "gold"; }
+
+.tomato {
+  height: 200px;
+  width: 100px;
+  border: none;
+  background-color: tomato; }
+  .tomato:before {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    content: "tomato"; }
+
 button.red {
   background-color: #F00;
   color: #ff8080;

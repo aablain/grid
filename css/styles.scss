@@ -29,6 +29,7 @@ img {
   min-height: 1px;
   border: 1px solid black;
 }
+@include primary (whitesmoke, teal, gold, tomato);
 
 @include closehover (red, #F00);
 @include closehover (blue, #369);
