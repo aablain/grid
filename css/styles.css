@@ -29,6 +29,36 @@ img {
   min-height: 1px;
   border: 1px solid black; }
 
+button.red {
+  background-color: #F00;
+  color: #ff8080;
+  padding: 10px;
+  border-radius: 10px; }
+  button.red:hover {
+    background-color: #ff8080;
+    color: #F00;
+    cursor: pointer; }
+
+button.blue {
+  background-color: #369;
+  color: #79a6d2;
+  padding: 10px;
+  border-radius: 10px; }
+  button.blue:hover {
+    background-color: #79a6d2;
+    color: #369;
+    cursor: pointer; }
+
+button.green {
+  background-color: green;
+  color: #01ff01;
+  padding: 10px;
+  border-radius: 10px; }
+  button.green:hover {
+    background-color: #01ff01;
+    color: green;
+    cursor: pointer; }
+
 @media only screen and (min-width: 30em) {
   .wrapper {
     width: 95%;

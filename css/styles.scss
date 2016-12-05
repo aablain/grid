@@ -30,6 +30,10 @@ img {
   border: 1px solid black;
 }
 
+@include closehover (red, #F00);
+@include closehover (blue, #369);
+@include closehover (green, green);
+
 @media #{$breakpoint-medium} {
   .wrapper {
     width: 95%;

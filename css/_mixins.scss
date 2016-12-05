@@ -14,3 +14,17 @@
     clear: both;
   }
 }
+
+@mixin closehover($buttoncolor ,$color) {
+  button.#{$buttoncolor} {
+    background-color: $color;
+    color: lighten($color, 25%);
+    padding: 10px;
+    border-radius: 10px;
+    &:hover {
+      background-color: lighten($color, 25%);
+      color: $color;
+      cursor: pointer;
+    }
+  }
+}
