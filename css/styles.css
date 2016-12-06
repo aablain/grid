@@ -27,47 +27,88 @@ img {
   padding: 1em;
   width: 100%;
   min-height: 1px;
-  border: 1px solid black; }
+  border: 1px solid black;
+  margin-bottom: 10px; }
 
-.whitesmoke {
+.row:nth-child(1) .color-1 {
   height: 200px;
-  width: 100px;
-  border: none;
-  background-color: whitesmoke; }
-  .whitesmoke:before {
-    text-transform: uppercase;
-    font-family: sans-serif;
-    content: "whitesmoke"; }
+  background: #856; }
 
-.teal {
-  height: 200px;
-  width: 100px;
-  border: none;
-  background-color: teal; }
-  .teal:before {
-    text-transform: uppercase;
-    font-family: sans-serif;
-    content: "teal"; }
+.row:nth-child(2) .color-1 {
+  height: 100px;
+  background: #885566; }
 
-.gold {
-  height: 200px;
-  width: 100px;
-  border: none;
-  background-color: gold; }
-  .gold:before {
-    text-transform: uppercase;
-    font-family: sans-serif;
-    content: "gold"; }
+.row:nth-child(3) .color-1 {
+  height: 100px;
+  background: #516087; }
 
-.tomato {
+.row:nth-child(4) .color-1 {
+  height: 100px;
+  background: #674a50; }
+
+.row:nth-child(5) .color-1 {
+  height: 100px;
+  background: #d55e52; }
+
+.row:nth-child(1) .color-2 {
   height: 200px;
-  width: 100px;
-  border: none;
-  background-color: tomato; }
-  .tomato:before {
-    text-transform: uppercase;
-    font-family: sans-serif;
-    content: "tomato"; }
+  background: #369; }
+
+.row:nth-child(2) .color-2 {
+  height: 100px;
+  background: #6a5b78; }
+
+.row:nth-child(3) .color-2 {
+  height: 100px;
+  background: #336699; }
+
+.row:nth-child(4) .color-2 {
+  height: 100px;
+  background: #495062; }
+
+.row:nth-child(5) .color-2 {
+  height: 100px;
+  background: #b86464; }
+
+.row:nth-child(1) .color-3 {
+  height: 200px;
+  background: #544; }
+
+.row:nth-child(2) .color-3 {
+  height: 100px;
+  background: #764f5a; }
+
+.row:nth-child(3) .color-3 {
+  height: 100px;
+  background: #3f5a7b; }
+
+.row:nth-child(4) .color-3 {
+  height: 100px;
+  background: #554444; }
+
+.row:nth-child(5) .color-3 {
+  height: 100px;
+  background: #c45846; }
+
+.row:nth-child(1) .color-4 {
+  height: 200px;
+  background: tomato; }
+
+.row:nth-child(2) .color-4 {
+  height: 100px;
+  background: #b25a5b; }
+
+.row:nth-child(3) .color-4 {
+  height: 100px;
+  background: #7a657c; }
+
+.row:nth-child(4) .color-4 {
+  height: 100px;
+  background: #914f45; }
+
+.row:nth-child(5) .color-4 {
+  height: 100px;
+  background: tomato; }
 
 button.red {
   background-color: #F00;

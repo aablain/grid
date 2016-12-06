@@ -28,8 +28,15 @@ img {
   width: 100%;
   min-height: 1px;
   border: 1px solid black;
+  margin-bottom: 10px;
 }
-@include primary (whitesmoke, teal, gold, tomato);
+
+$color1: #856;
+$color2: #369;
+$color3: #544;
+$color4: tomato;
+
+@include primary ($color1, $color2, $color3, $color4);
 
 @include closehover (red, #F00);
 @include closehover (blue, #369);

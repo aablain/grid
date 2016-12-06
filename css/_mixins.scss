@@ -29,20 +29,68 @@
   }
 }
 // color palette
-@mixin primary($color1, $color2, $color3, $color4) {
-  @each $color in $color1, $color2, $color3, $color4 {
-      .#{$color} {
-        height: 200px;
-        width: 100px;
-        border: none;
-        background-color: $color;
-        &:before {
-          text-transform: uppercase;
-          font-family: sans-serif;
-          content: "" + $color;
-        }
+@mixin boxes($height) {
+  height: $height;
+}
+@mixin primary($colors...) {
+  @for $i from 1 through length($colors) {
+    .row:nth-child(1) {
+      .color-#{$i} {
+        @include boxes(200px);
+        background: nth($colors, $i);
       }
-
+    }
+    .row:nth-child(2) {
+      .color-#{$i} {
+        @include boxes(100px);
+        background: mix(nth($colors, $i), nth($colors, 1), 35%);
+      }
+    }
+    .row:nth-child(3) {
+      .color-#{$i} {
+        @include boxes(100px);
+        background: mix(nth($colors, $i), nth($colors, 2), 35%);
+      }
+    }
+    .row:nth-child(4) {
+      .color-#{$i} {
+        @include boxes(100px);
+        background: mix(nth($colors, $i), nth($colors, 3), 35%);
+      }
+    }
+    .row:nth-child(5) {
+      .color-#{$i} {
+        @include boxes(100px);
+        background: mix(nth($colors, $i), nth($colors, 4), 35%);
+      }
+    }
   }
 }
+
+  // @each $color in $color1, $color2, $color3, $color4 {
+      // .row:first-child .#{$color} {
+      //   height: 200px;
+      //   border: none;
+      //   background-color: $color;
+      //   &:before {
+      //     text-transform: uppercase;
+      //     font-family: sans-serif;
+      //     content: "" + $color;
+      //   }
+      // }
+      // .row:nth-child(2) .#{$color} {
+      //   background-color: mix($color, $color1, 65%);
+      // }
+      // .row:nth-child(3) .#{$color} {
+      //   background-color: mix($color, $color2, 65%);
+      // }
+      // .row:nth-child(4) .#{$color} {
+      //   background-color: mix($color, $color3, 65%);
+      // }
+      // .row:nth-child(5) .#{$color} {
+      //   background-color: mix($color, $color4, 65%);
+      // }
+
+  // }
+// }
 // content: "Mixed with 65% $color";
