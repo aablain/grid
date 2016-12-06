@@ -30,85 +30,137 @@ img {
   border: 1px solid black;
   margin-bottom: 10px; }
 
-.row:nth-child(1) .color-1 {
+body {
+  font-family: sans-serif;
+  color: #555; }
+
+.row-1 .color-1 {
   height: 200px;
-  background: #856; }
+  border: none;
+  background: #D9F5E8; }
+  .row-1 .color-1:before {
+    content: "Color 1 (#D9F5E8)"; }
 
-.row:nth-child(2) .color-1 {
+.row-2 .color-1 {
   height: 100px;
-  background: #885566; }
-
-.row:nth-child(3) .color-1 {
+  border: none;
+  background: #d9f5e8; }
+  .row-2 .color-1:before {
+    content: "Color 1 + (65% of Color 1)"; }
+.row-2 .color-2 {
   height: 100px;
-  background: #516087; }
-
-.row:nth-child(4) .color-1 {
+  border: none;
+  background: #a0e6db; }
+  .row-2 .color-2:before {
+    content: "Color 2 + (65% of Color 1)"; }
+.row-2 .color-3 {
   height: 100px;
-  background: #674a50; }
-
-.row:nth-child(5) .color-1 {
+  border: none;
+  background: #e6e1a9; }
+  .row-2 .color-3:before {
+    content: "Color 3 + (65% of Color 1)"; }
+.row-2 .color-4 {
   height: 100px;
-  background: #d55e52; }
+  border: none;
+  background: #e6c2b0; }
+  .row-2 .color-4:before {
+    content: "Color 4 + (65% of Color 1)"; }
 
-.row:nth-child(1) .color-2 {
+.row-1 .color-2 {
   height: 200px;
-  background: #369; }
+  border: none;
+  background: #37CBC2; }
+  .row-1 .color-2:before {
+    content: "Color 2 (#37CBC2)"; }
 
-.row:nth-child(2) .color-2 {
+.row-3 .color-1 {
   height: 100px;
-  background: #6a5b78; }
-
-.row:nth-child(3) .color-2 {
+  border: none;
+  background: #70dacf; }
+  .row-3 .color-1:before {
+    content: "Color 1 + (65% of Color 2)"; }
+.row-3 .color-2 {
   height: 100px;
-  background: #336699; }
-
-.row:nth-child(4) .color-2 {
+  border: none;
+  background: #37cbc2; }
+  .row-3 .color-2:before {
+    content: "Color 2 + (65% of Color 2)"; }
+.row-3 .color-3 {
   height: 100px;
-  background: #495062; }
-
-.row:nth-child(5) .color-2 {
+  border: none;
+  background: #7dc590; }
+  .row-3 .color-3:before {
+    content: "Color 3 + (65% of Color 2)"; }
+.row-3 .color-4 {
   height: 100px;
-  background: #b86464; }
+  border: none;
+  background: #7da797; }
+  .row-3 .color-4:before {
+    content: "Color 4 + (65% of Color 2)"; }
 
-.row:nth-child(1) .color-3 {
+.row-1 .color-3 {
   height: 200px;
-  background: #544; }
+  border: none;
+  background: #FFBB33; }
+  .row-1 .color-3:before {
+    content: "Color 3 (#FFBB33)"; }
 
-.row:nth-child(2) .color-3 {
+.row-4 .color-1 {
   height: 100px;
-  background: #764f5a; }
-
-.row:nth-child(3) .color-3 {
+  border: none;
+  background: #f2cf72; }
+  .row-4 .color-1:before {
+    content: "Color 1 + (65% of Color 3)"; }
+.row-4 .color-2 {
   height: 100px;
-  background: #3f5a7b; }
-
-.row:nth-child(4) .color-3 {
+  border: none;
+  background: #b9c165; }
+  .row-4 .color-2:before {
+    content: "Color 2 + (65% of Color 3)"; }
+.row-4 .color-3 {
   height: 100px;
-  background: #554444; }
-
-.row:nth-child(5) .color-3 {
+  border: none;
+  background: #ffbb33; }
+  .row-4 .color-3:before {
+    content: "Color 3 + (65% of Color 3)"; }
+.row-4 .color-4 {
   height: 100px;
-  background: #c45846; }
+  border: none;
+  background: #ff9c3a; }
+  .row-4 .color-4:before {
+    content: "Color 4 + (65% of Color 3)"; }
 
-.row:nth-child(1) .color-4 {
+.row-1 .color-4 {
   height: 200px;
+  border: none;
+  background: #FF6347; }
+  .row-1 .color-4:before {
+    content: "Color 4 (#FF6347)"; }
+
+.row-5 .color-1 {
+  height: 100px;
+  border: none;
+  background: #f2967f; }
+  .row-5 .color-1:before {
+    content: "Color 1 + (65% of Color 4)"; }
+.row-5 .color-2 {
+  height: 100px;
+  border: none;
+  background: #b98772; }
+  .row-5 .color-2:before {
+    content: "Color 2 + (65% of Color 4)"; }
+.row-5 .color-3 {
+  height: 100px;
+  border: none;
+  background: #ff8240; }
+  .row-5 .color-3:before {
+    content: "Color 3 + (65% of Color 4)"; }
+.row-5 .color-4 {
+  height: 100px;
+  border: none;
   background: tomato; }
-
-.row:nth-child(2) .color-4 {
-  height: 100px;
-  background: #b25a5b; }
-
-.row:nth-child(3) .color-4 {
-  height: 100px;
-  background: #7a657c; }
-
-.row:nth-child(4) .color-4 {
-  height: 100px;
-  background: #914f45; }
-
-.row:nth-child(5) .color-4 {
-  height: 100px;
-  background: tomato; }
+  .row-5 .color-4:before {
+    content: "Color 4 + (65% of Color 4)"; }
 
 button.red {
   background-color: #F00;

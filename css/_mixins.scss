@@ -31,37 +31,28 @@
 // color palette
 @mixin boxes($height) {
   height: $height;
+  border: none;
 }
 @mixin primary($colors...) {
   @for $i from 1 through length($colors) {
-    .row:nth-child(1) {
+    .row-1 {
       .color-#{$i} {
         @include boxes(200px);
         background: nth($colors, $i);
+        &:before {
+          content: "Color " + $i + " (" + nth($colors, $i) + ")";
+        }
       }
     }
-    .row:nth-child(2) {
-      .color-#{$i} {
-        @include boxes(100px);
-        background: mix(nth($colors, $i), nth($colors, 1), 35%);
-      }
-    }
-    .row:nth-child(3) {
-      .color-#{$i} {
-        @include boxes(100px);
-        background: mix(nth($colors, $i), nth($colors, 2), 35%);
-      }
-    }
-    .row:nth-child(4) {
-      .color-#{$i} {
-        @include boxes(100px);
-        background: mix(nth($colors, $i), nth($colors, 3), 35%);
-      }
-    }
-    .row:nth-child(5) {
-      .color-#{$i} {
-        @include boxes(100px);
-        background: mix(nth($colors, $i), nth($colors, 4), 35%);
+    .row-#{$i + 1} {
+      @for $j from 1 through length($colors) {
+        .color-#{$j} {
+          @include boxes(100px);
+          background: mix(nth($colors, $j), nth($colors, $i), 35%);
+          &:before {
+            content: "Color " + $j + " + (65% of Color " + $i + ")";
+          }
+        }
       }
     }
   }

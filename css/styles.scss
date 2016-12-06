@@ -31,10 +31,15 @@ img {
   margin-bottom: 10px;
 }
 
-$color1: #856;
-$color2: #369;
-$color3: #544;
-$color4: tomato;
+body {
+  font-family: sans-serif;
+  color: #555;
+}
+
+$color1: #D9F5E8;
+$color2: #37CBC2;
+$color3: #FFBB33;
+$color4: #FF6347;
 
 @include primary ($color1, $color2, $color3, $color4);
 
